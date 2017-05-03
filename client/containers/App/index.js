@@ -8,6 +8,7 @@ import TransactionForm from 'containers/TransactionForm';
 import TransactionSummary from 'containers/TransactionSummary';
 import * as AppActions from 'actions';
 import './style.css';
+import Calendar from 'components/Calendar'
 
 class App extends Component {
   static propTypes = {
@@ -32,6 +33,8 @@ class App extends Component {
 
     return (
       <div className="viewport">
+        hello
+        <Calendar/>
         <Header addTodo={actions.addTodo} />
         <Grid fields={gridFields} data={transactions}>
           <TransactionForm action={actions.addTransaction}/>

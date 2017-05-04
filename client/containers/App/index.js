@@ -33,7 +33,7 @@ class App extends Component {
 
     return (
       <div className="viewport">
-        hello
+
         <Calendar/>
 
       </div>

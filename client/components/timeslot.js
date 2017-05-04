@@ -1,20 +1,38 @@
-import React, {
-    PropTypes,
-} from 'react';
+// import React, {
+//     PropTypes,
+// } from 'react';
+//
+//
+// let availableSlots = [
+//     {
+//         "dateTime": "1/1/2000",
+//         "period": "9am-12am"
+//     }];
+//
+// const TimeSlot = React.createClass({
+//     render() {
+//         return (
+//             <div></div>
+//         );
+//     }
+// });
+//
+// export default TimeSlot;
 
 
-let availableSlots = [
-    {
-        "dateTime": "1/1/2000",
-        "period": "9am-12am"
-    }];
+import React, { Component} from 'react';
 
-const TimeSlot = React.createClass({
+export default class TimeSlot extends Component {
+    
+    someMethod(){
+    }
+
+    
     render() {
         return (
-            <div></div>
+            <div>hi this is timeslot
+                <button className="btn" onClick={this.someMethod.bind(this)}>lol</button>
+            </div>
         );
     }
-});
-
-export default TimeSlot;
+}

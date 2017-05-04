@@ -1,4 +1,5 @@
 import React, { Component} from 'react';
+import TimeSlot from './timeslot';
 
 export default class Calendar extends Component {
     
@@ -14,9 +15,8 @@ export default class Calendar extends Component {
     render() {
         return (
             <div>
-                yoho moi je suis the calendar
                 <div className="row seven-cols">
-                    <div className="bord col-md-1 midd">SUN <br/> <TimeSlot> </div>
+                    <div className="bord col-md-1 midd">SUN <br/> <TimeSlot/> </div>
                     <div className="bord  col-md-1 midd">MON <br/> 13</div>
                     <div className="bord col-md-1 midd">TUE<br/> 14</div>
                     <div className="bord col-md-1 midd">WED<br/> 15</div>
